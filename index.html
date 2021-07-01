@@ -7,17 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trouvez le pays</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>Trouve le pays correspondant au drapeau</h1>
     <div class="section-dreapeau">
         <h3>Voici un drapeau</h3>
-        <img id="drapeau" src="" alt="drapeau">
+        <img id="drapeau" src="" alt="drapeau" class="img-drapeau">
         <form class="quizz-drapeau">
-            <input type="text" name="" id="reponse">
+            <input type="text" name="" id="reponse" autocomplete="off">
             <button type="submit">Validez</button>
         </form>
+    </div>
+    <div class="reponse">
+        <p class="resultat"></p>
     </div>
     <script src="app.js"></script>
 </body>
