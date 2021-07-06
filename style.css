@@ -1,97 +1,112 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: #f2f6fa;
-    font-family: 'Comfortaa', cursive;
+  font-family: 'IBM Plex Mono', monospace;
+  background: linear-gradient(to bottom right, #F6C339, #DE9B28);
+  height: 100vh;
 }
 
 h1 {
-    color: #333;
-    text-align: center;
-    padding: 5%;
-    font-size: 45px;
+  color: #222;
+  text-align: center;
+  padding: 5%;
+  font-size: 45px;
+  font-family: 'Tourney', cursive;;
 }
 
-.section-dreapeau h3{
-    font-size: 25px;
-    text-align: center;
-    color: #DE7676;
+.section-dreapeau {
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 6px 7px 20px 1px #da773d;
 }
 
-.section-dreapeau img{
-    display: block;
-    width: 150px;
-    margin: 0 auto;
+.section-dreapeau h3 {
+  padding: 40px;
+  font-size: 25px;
+  text-align: center;
+  color: #222;
 }
 
-.section-dreapeau form{
-    width: 350px;
-    margin: auto;
+.section-dreapeau img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.section-dreapeau form {
+  width: 350px;
+  margin: auto;
 }
 
 #reponse {
-    display: block;
-    width: 150px;
-    height: 30px;
-    outline: none;
-    border: solid 3px #DE7676;
-    border-radius: 15px;
-    margin: 20px auto;
-
+  display: block;
+  width: 230px;
+  height: 30px;
+  outline: none;
+  border: solid 3px #222;
+  border-radius: 15px;
+  margin: 20px auto;
+  text-align: center;
 }
 
 form button {
-    display: block;
-    margin: auto;
-    font-size: 18px;
-    font-weight: 300;
-    color: white;
-    padding: 25px 80px;
-    background: #DE7676;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0 6px #da3d3d;
-    border-radius: 20px;
+  display: block;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  padding: 10px 80px;
+  background: #444;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 6px #222;
+  border-radius: 20px;
 }
 
 form button:hover {
-    box-shadow: 0px 4px #da3d3d;
-    top: 2px;
+  box-shadow: 0px 4px #222;
+  top: 2px;
 }
 
 form button:active {
-    box-shadow: 0px 0px #da3d3d;
-    top: 6px;
+  box-shadow: 0px 0px #da773d;
+  top: 6px;
 }
 
-
-
 .resultat {
-    text-align: center;
-    margin: 20px auto;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .erreur {
-        animation: erreur 0.3s ease-in-out;
-    }
-    
-    @keyframes erreur {
-        0% {
-            transform: translateX(0px);
-        }
-        33% {
-            transform: translateX(10px);
-        }
-        66% {
-            transform: translateX(-10px);
-        }
-        100% {
-            transform: translateX(0px);
-        }
-    }
+  animation: erreur 0.3s ease-in-out;
+}
+
+@keyframes erreur {
+  0% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(10px);
+  }
+  66% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.resultat {
+  padding: 20px;
+  font-size: 35px;
+  color: #222;
 }
