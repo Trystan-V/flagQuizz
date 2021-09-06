@@ -35,13 +35,15 @@ function numeroAleatoire(max) {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
   proposition = [document.getElementById("reponse").value];
-  //proposition.toString();
-  console.log(proposition);
+
+  propositionPetiteCase = proposition.toString().toLowerCase();
+  console.log(propositionPetiteCase);
 
   //si l'entrée de l'utilisateur correspond au diminutif du bon pays: animation bien
 
-  if (proposition == convertionReponse) {
+  if (propositionPetiteCase == convertionReponse) {
     resultat.innerText = `C'est la bonne réponse`;
     console.log("nice");
     setTimeout(rafraichir, 2000);
